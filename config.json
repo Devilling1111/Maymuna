@@ -19,8 +19,8 @@
     ]
   },
   "adminBot": [
-    "100057678948022",
-    "100045823417357"
+    "100000939642985",
+    "100007070042228"
     
   ],
   "whiteListMode": {
@@ -28,8 +28,8 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "SANNY-ROBOT🕊️",
-  "prefix": "+",
+  "nickNameBot": "☆(❁𝐑𝐁-𝐁𝐎𝐓❁)☆",
+  "prefix": ".",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
