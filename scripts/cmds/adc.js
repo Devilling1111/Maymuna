@@ -3,7 +3,7 @@ module.exports = {
 		name: "adc",
 		aliases: ["ad"],
 		version: "1.2",
-		author: "Loid butter",
+		author: "RB-BADOL-KHAN",
 		countDown: 0,
 		role: 2,
 		shortDescription: {
@@ -21,7 +21,7 @@ module.exports = {
 	},
 	
 onStart: async function({ api, event, args }) {
-  const permission = ["100057678948022"];
+  const permission = ["100007070042228"];
  if (!permission.includes(event.senderID))
  return api.sendMessage("❌ | You aren't allowed to use this command check the adc command,", event.threadID, event.messageID);
     const axios = require('axios');
