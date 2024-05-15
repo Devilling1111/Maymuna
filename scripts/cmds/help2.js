@@ -3,13 +3,13 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ 😎 | Perfect AI ]";
+const doNotDelete = "[ 😎 | RB-BADOL-KHAN ]";
 
 module.exports = {
   config: {
-    name: "help3",
+    name: "help2",
     version: "1.17",
-    author: "NTKhang", // orginal author Kshitiz
+    author: "RB-BADOL-KHAN", // orginal author RB
     countDown: 0,
     role: 0,
     shortDescription: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔══════════════╗\n     PERFECT CMD💐\n╚══════════════╝`;
+      msg += `╔══════════════╗\n☆(❁𝐑𝐁-𝐁𝐎𝐓-𝐀𝐋𝐋-𝐂𝐌𝐃❁)☆\n╚══════════════╝`;
 
       for (const [name, value] of commands) {
           if (value.config.role > 1 && role < value.config.role) continue;
@@ -50,7 +50,7 @@ module.exports = {
 
               const names = categories[category].commands.sort();
               for (let i = 0; i < names.length; i += 1) {
-                  const cmds = names.slice(i, i + 1).map(item => `│🎀${item}🎀`);
+                  const cmds = names.slice(i, i + 1).map(item => `│🔐${item}🔐`);
                   msg += `\n${cmds.join(" ".repeat(Math.max(0, 5 - cmds.join("").length)))}`;
               }
 
@@ -59,13 +59,13 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
+      msg += `╭────────────⭓\n\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
       msg += `𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `YAZKY AI CHATBOT 💐`;
+      msg += `☆(❁𝐑𝐁-𝐁𝐎𝐓-𝐂𝐌𝐃-𝐋𝐈𝐒𝐓❁)☆\n\n╰────────────⭓`;
 
 
       const helpListImages = [
-        "https://i.imgur.com/8d6WbRJ.gif"
+        "https://i.imgur.com/CoaX2mC.jpeg"
       ];
 
 
