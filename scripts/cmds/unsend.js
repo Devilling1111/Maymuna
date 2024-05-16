@@ -1,8 +1,8 @@
 module.exports = {
 	config: {
-		name: "unsend",
+		name: "remove",
 		version: "1.2",
-		author: "NTKhang",
+		author: "RB-BADOL-KHAN",
 		countDown: 5,
 		role: 0,
 		description: {
