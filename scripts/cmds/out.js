@@ -3,10 +3,10 @@ const fs = require("fs-extra");
 const request = require("request");
 module.exports = {
 	config: {
-		name: "Out",
+		name: "left",
 		aliases: ["l"],
 		version: "1.0",
-		author: "Sandy",
+		author: "RB-BADOL-KHAN",
 		countDown: 5,
 		role: 2,
 		shortDescription: "bot will leave gc",
@@ -25,6 +25,6 @@ module.exports = {
  } else {
  id = parseInt(args.join(" "));
  }
- return api.sendMessage('▣𝗦𝗔𝗡𝗖𝗛𝗢𝗞𝗨𝗜𝗡:\n》Mon succès est inévitable, car je suis destiné à être au sommet.\n\n➤𝗕𝗘𝗬 𝗟𝗘𝗦 𝗡𝗔𝗭𝗘𝗦', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
+ return api.sendMessage('🍒𝐑𝐁-𝐁𝐎𝐓⛄:\n》তোমাদের গ্রুপে না থাকলে আমার বাল ছেড়ে গেলো😑\n\n🤘ওকে বাই🍆🤘', id, () => api.removeUserFromGroup(api.getCurrentUserID(), id))
 		}
 	};
