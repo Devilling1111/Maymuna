@@ -3,9 +3,9 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 module.exports = {
 	config: {
-		name: "adduser",
+		name: "add",
 		version: "1.5",
-		author: "NTKhang",
+		author: "RB-BADOL-KHAN",
 		countDown: 0,
 		role: 1,
 		description: {
@@ -30,14 +30,14 @@ module.exports = {
 			cannotAddUser: "Bot bị chặn tính năng hoặc người dùng này chặn người lạ thêm vào nhóm"
 		},
 		en: {
-			alreadyInGroup: "Already in group",
-			successAdd: "- Successfully added %1 members to the group",
-			failedAdd: "- Failed to add %1 members to the group",
-			approve: "- Added %1 members to the approval list",
-			invalidLink: "Please enter a valid facebook link",
-			cannotGetUid: "Cannot get uid of this user",
-			linkNotExist: "This profile url does not exist",
-			cannotAddUser: "Bot is blocked or this user blocked strangers from adding to the group"
+			alreadyInGroup: "❯ ইতিমধ্যে দলে🤘",
+			successAdd: "❯ একটা নোলা মার্ক মেম্বার এড করা হলো গ্রুপে🤦‍♂️",
+			failedAdd: "❯ নোলা মার্ক আইডি এড দেইনা গ্রুপে🐸",
+			approve: "❯ একটা নলারে গ্রুপে এড করছি ApprovalApproval করের🤦‍♂️",
+			invalidLink: "❯ নোলা মার্ক আইডির লিংক দেন😑",
+			cannotGetUid: "❯ নোলা মার্কার Uid পাইনাই🥺",
+			linkNotExist: "❯ নোলা মার্ক আইডির লিংক এটা🍆",
+			cannotAddUser: "🤧বট ব্লক করা হয়েছে বা এই ব্যবহারকারী অপরিচিতদের গ্রুপে যোগ করা থেকে অবরুদ্ধ করেছে📌"
 		}
 	},
 
