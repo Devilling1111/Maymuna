@@ -5,7 +5,7 @@ const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
 const doNotDelete = "𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐊𝐇𝐀𝐍";
 /** 
-* @author RB-BADOL-KHAN
+* @author NTKhang
 * @author: do not delete it
 * @message if you delete or edit it you will get a global ban
 * please don't ban me, your help.js is Modified 
