@@ -3,10 +3,10 @@ const defaultEmojiTranslate = "🌐";
 
 module.exports = {
 	config: {
-		name: "translate",
+		name: "convat",
 		aliases: ["trans"],
 		version: "1.5",
-		author: "NTKhang",
+		author: "RB-BADOL-KHAN",
 		countDown: 5,
 		role: 0,
 		description: {
@@ -43,7 +43,7 @@ module.exports = {
 
 		},
 		en: {
-			translateTo: "🌐 Translate from %1 to %2",
+			translateTo: "🌐  কনভার্ট %1 টু %2",
 			invalidArgument: "❌ Invalid argument, please choose on or off",
 			turnOnTransWhenReaction: `✅ Turn on translate message when reaction, try to react \"${defaultEmojiTranslate}\" to any message to translate it (not support bot message)\n Only translate message after turn on this feature`,
 			turnOffTransWhenReaction: "✅ Turn off translate message when reaction",
