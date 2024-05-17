@@ -65,7 +65,7 @@ module.exports = {
 
 
       const helpListImages = [
-        "https://i.imgur.com/CoaX2mC.jpeg"
+        "https://i.imgur.com/O3ARwbQ.jpeg"
       ];
 
 
