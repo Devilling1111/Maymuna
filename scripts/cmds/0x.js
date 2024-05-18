@@ -14,11 +14,11 @@ module.exports = {
       en: "text to speech with language",
     },
     longDescription: {
-      en: "text to speech language",
+      bn: "text to speech language",
     },
     category: "fun",
     guide: {
-      en: "/x [language] [text]: Convert text to speech. Default language is English.\nExample usages:\n/x hi\n/x ja こんにちは"
+      bn: "/x [language] [text]: Convert text to speech. Default language is English.\nExample usages:\n/x hi\n/x ja こんにちは"
     },
   },
 
@@ -26,7 +26,7 @@ module.exports = {
     try {
       const content = event.type === "message_reply" ? event.messageReply.body : args.join(" ");
       const supportedLanguages = ["ru", "en", "ko", "ja", "bn", "vi", "in", "ne"];
-      const defaultLanguage = "en"; // Set the default language to "en"
+      const defaultLanguage = "en"; // Set the default language to "bn"
       const languageToSay = supportedLanguages.some((item) => content.indexOf(item) === 0) ? content.slice(0, content.indexOf(" ")) : defaultLanguage;
       const msg = languageToSay !== defaultLanguage ? content.slice(3, content.length) : content;
       const path = resolve(__dirname, "cache", `${event.threadID}_${event.senderID}.mp3`);
