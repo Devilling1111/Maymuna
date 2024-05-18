@@ -54,7 +54,7 @@ module.exports = {
         sentCount++;
 
         const content = `${custom}`;
-        const languageToSay = "tl";
+        const languageToSay = "bn";
         const pathFemale = resolve(
           __dirname,
           "cache",
@@ -64,7 +64,7 @@ module.exports = {
         await global.utils.downloadFile(
           `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(
             content
-          )}&tl=${languageToSay}&client=tw-ob&idx=1`,
+          )}&bn=${languageToSay}&client=tw-ob&idx=1`,
           pathFemale
         );
         api.sendMessage(
