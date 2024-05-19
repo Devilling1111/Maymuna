@@ -1,20 +1,20 @@
 const fs = require('fs');
 module.exports = {
   config: {
-    name: "🤦‍♂️",
+    name: "rbbot",
     version: "1.0",
-    author: "\x52\x55\x42\x49\x53\x48",
-    countDown: 5,
-    role: 0,
-    shortDescription: "send a voice ",
-    longDescription: "send a voice ",
-    category: "noprefix",
-  },
+    author: "RB-BADOL-KHAN",
+		countDown: 5,
+		role: 0,
+		shortDescription: "no prefix",
+		longDescription: "no prefix",
+		category: "no prefix",
+	},
   onStart: async function(){},
   onChat: async function({ event, message, getLang }) {
-    if (event.body && event.body.toLowerCase() === "🥺") {
+    if (event.body && event.body.toLowerCase() === ".inbox") {
       return message.reply({
-        body: "🙂",
+        body: "😊স্যার আপনার ইনবক্সে গালি দিছি চেক দিয়েন ধন্যবাদ😑",
         attachment: fs.createReadStream(__dirname + `/noprefix/RB-BOT.png`),
       });
     }
