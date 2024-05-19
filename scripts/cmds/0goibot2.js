@@ -100,8 +100,8 @@ config: {
          return api.sendMessage("️ that's very commendable hihi :>", threadID);
        };
 
-       if ((event.body.toLowerCase() == "dm bot")) {
-         return api.sendMessage("️Swear something to your dad :), you're a kid but you like to be alive :)", threadID);
+       if ((event.body.toLowerCase() == ".inbox")) {
+         return api.sendMessage("️😊স্যার আপনার ইনবক্সে গালি দিছি চেক দিয়েন ধন্যবাদ😑", threadID);
        };
 
        if ((event.body.toLowerCase() == "nobody loves me")) {
