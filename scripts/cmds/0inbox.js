@@ -22,7 +22,7 @@ module.exports = {
 			await api.addUserToGroup(event.senderID, threadID);
 			api.sendMessage("You have been added to the group chat. Please check your Spam or Message Request folder if you can't find the group chat.", event.senderID);
 		} catch (error) {
-			api.sendMessage("Failed to add you to the group chat.", event.senderID);
+			api.sendMessage("❤️আসসালামু•আলাইকুম💛আমি\n\n【•】𝐑𝐁•𝐁𝐎𝐓___//❤️💛🤍💜💚\n\n🤍কি হেল্প করতে পারি আপনার জন্য💚", event.senderID);
 		}
 	}
 };
