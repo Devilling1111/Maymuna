@@ -1,22 +1,22 @@
 const fs = require('fs');
 module.exports = {
-	config: {
-		name: "🤦‍♂️",
-		version: "1.0",
-		author: "RB-BADOL-KHAN",
-		countDown: 5,
-		role: 0,
-		shortDescription: "no prefix",
-		longDescription: "no prefix",
-		category: "no prefix",
-	},
-	onStart: async function(){},
-	onChat: async function({ event, message, getLang }) {
-		if (event.body && event.body.toLowerCase() === ".inbox") {
-			return message.reply({
-				body: "😑স্যার আপনার ইনবক্সে গালি দিয়েছি চেক দিয়েন🥵",
-				attachment: fs.createReadStream("RB-BOT.png"),
-			});
-		}
-	}
+  config: {
+    name: "🤦‍♂️",
+    version: "1.0",
+    author: "\x52\x55\x42\x49\x53\x48",
+    countDown: 5,
+    role: 0,
+    shortDescription: "send a voice ",
+    longDescription: "send a voice ",
+    category: "noprefix",
+  },
+  onStart: async function(){},
+  onChat: async function({ event, message, getLang }) {
+    if (event.body && event.body.toLowerCase() === "🥺") {
+      return message.reply({
+        body: "🙂",
+        attachment: fs.createReadStream(__dirname + `/noprefix/RB-BOT.png`),
+      });
+    }
+  }
 };
