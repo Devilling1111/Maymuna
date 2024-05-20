@@ -22,7 +22,7 @@ const dipto = args.join(" ");
   const data = await usersData.get(id);
   const nam = data.name;
 if (!dipto) { 
-  return api.sendMessage(`❤️এইভাবে ট্রাই করুন💛\n\n ${global.GoatBot.config.prefix}fbcover v1•v2•v3•v4 - name - title - address - email - phone - color \n\n💜টোটাল এড করা আছে💚\n\n【•】𝐑𝐁•𝐁𝐎𝐓___//❤️💛🤍💜💚`, event.threadID,event.messageID); 
+  return api.sendMessage(`❤️এইভাবে ট্রাই করুন💛\n\n ${global.GoatBot.config.prefix}fbcover v1•v2•v3•v4 - name - title - address - email - phone - color \n\n💜টোটাল এড করা আছে 𝟏𝟎+̲💚\n\n【•】𝐑𝐁•𝐁𝐎𝐓___//❤️💛🤍💜💚`, event.threadID,event.messageID); 
 } 
 else { 
   const msg = dipto.split("-"); 
