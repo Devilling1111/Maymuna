@@ -22,7 +22,7 @@ const dipto = args.join(" ");
   const data = await usersData.get(id);
   const nam = data.name;
 if (!dipto) { 
-  return api.sendMessage(`❌| wrong \ntry ${global.GoatBot.config.prefix}fbcover v1/v2/v3 - name - title - address - email - phone - color (default = white)(total 7)`, event.threadID,event.messageID); 
+  return api.sendMessage(`❤️এইভাবে ট্রাই করুন💛\n\n ${global.GoatBot.config.prefix}fbcover v1•v2•v3•v4 - name - title - address - email - phone - color \n\n💜টোটাল এড করা আছে💚\n\n【•】𝐑𝐁•𝐁𝐎𝐓___//❤️💛🤍💜💚`, event.threadID,event.messageID); 
 } 
 else { 
   const msg = dipto.split("-"); 
@@ -33,7 +33,7 @@ else {
   const email = msg[4].trim() || " "; 
   const phone = msg[5].trim() || " "; 
   const color = msg[6].trim() || "white" ;
-api.sendMessage(`🤍 প্লিজ ওয়েট আপনার কভার তৈরি করা হচ্ছে💛`, event.threadID,
+api.sendMessage(`❤️প্লিজ ওয়েট করুন আপনার কভারটি তৈরি করা হচ্ছে❤️`, event.threadID,
   (err, info) => 
   setTimeout(() => { api.unsendMessage(info.messageID) 
         }, 4000));
@@ -45,7 +45,7 @@ const image = await jimp.read(response.data);
 const Path = `./dipto_${id}.png`; 
   await image.writeAsync(Path); 
 const attachment = fs.createReadStream(Path);
-       api.sendMessage({ body: `✿━━━━━━━━━━━━━━━━━━━━━━━━━━━✿\n🔵𝗙𝗜𝗥𝗦𝗧 𝗡𝗔𝗠𝗘: ${name}\n⚫𝗦𝗘𝗖𝗢𝗡𝗗 𝗡𝗔𝗠𝗘:${subname}\n⚪𝗔𝗗𝗗𝗥𝗘𝗦𝗦: ${address}\n📫𝗠𝗔𝗜𝗟: ${email}\n☎️𝗣𝗛𝗢𝗡𝗘 𝗡𝗢.: ${phone}\n☢️𝗖𝗢𝗟𝗢𝗥: ${color}\n💁𝗨𝗦𝗘𝗥 𝗡𝗔𝗠𝗘: ${nam}\n✅𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : ${v}\n✿━━━━━━━━━━━━━━━━━━━━━━━━━━━✿`,attachment
+       api.sendMessage({ body: `𝐑𝐁━━━━━━━━━━━━━━━━━━━━━━━━━𝐑𝐁\n\n❤️𝗙𝗜𝗥𝗦𝗧 𝗡𝗔𝗠𝗘: ${name}\n\n🤍𝗦𝗘𝗖𝗢𝗡𝗗 𝗡𝗔𝗠𝗘:${subname}\n\n💚𝗔𝗗𝗗𝗥𝗘𝗦𝗦: ${address}\n\n💜𝗠𝗔𝗜𝗟: ${email}\n\n💛𝗣𝗛𝗢𝗡𝗘 𝗡𝗢.: ${phone}\n\n☢💙𝗖𝗢𝗟𝗢𝗥: ${color}\n\n💖𝗨𝗦𝗘𝗥 𝗡𝗔𝗠𝗘: ${nam}\n\n🖤𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : ${v}\n\n𝐑𝐁━━━━━━━━━━━━━━━━━━━━━━━━━𝐑𝐁`,attachment
 }, event.threadID, () => fs.unlinkSync(Path), event.messageID); 
       } catch (error) { 
     console.error(error); 
