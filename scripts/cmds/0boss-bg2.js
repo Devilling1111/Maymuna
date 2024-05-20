@@ -1,7 +1,7 @@
 const fs = require('fs');
 module.exports = {
   config: {
-    name: "mcs2",
+    name: "mcs3",
     version: "1.0",
     author: "RB-BADOL-KHAN",
 		countDown: 5,
@@ -12,7 +12,9 @@ module.exports = {
 	},
   onStart: async function(){},
   onChat: async function({ event, message, getLang }) {
-    if (event.body && event.body.toLowerCase() === "@Raja Babu _____// ;* :/ 3:)") {
+    if (event.body && event.body.toLowerCase() === "💙")
+(event.body && event.body.toLowerCase() === "💜")
+(event.body && event.body.toLowerCase() === "🤍") {
       return message.reply({
         body: "🤟বাদল বস এখন ব্যস্ত আছে মেসেজ করে তাকে ডিস্টার্ব করবেন না🤟",
         attachment: fs.createReadStream(__dirname + `/RB-BADOL-KHAN/badol-boss.mp3`),
