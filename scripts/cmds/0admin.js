@@ -34,7 +34,7 @@ module.exports = {
 			noAdmin: "Hiện tại bot chưa có admin nào"
 		},
 		en: {
-			missingMessage: "【•আপনি কি এডমিনের সাথে কন্টাক করছেন•】\n\n【•example•】👇\n\n.admin আসসালামু আলাইকুম❤️\n\n【•এইভাবে ট্রাই করুন ধন্যবাদ•】",
+			missingMessage: "【•এডমিনের সাথে কন্টাক্ট করতে চাইলে•】\n\n【•এই ভাবে ট্রাই করুন example👇•】\n\n.admin hi hlw how are you ❤️❤️",
 			sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
 			sendByUser: "\n- Sent from user",
 			content: "\n\nContent:\n─────────────────\n%1\n─────────────────\nReply this message to send message to user",
@@ -56,9 +56,9 @@ module.exports = {
 		if (config.adminBot.length == 0)
 			return message.reply(getLang("noAdmin"));
 		const senderName = await usersData.getName(senderID);
-		const msg = "==📨️ এডমিন মেনশন📨️=="
-			+ `\n- 𝐔𝐒𝐄𝐑•𝐍𝐀𝐌𝐄: ${senderName}`
-			+ `\n- 𝐔𝐒𝐄𝐑•𝐈𝐃: ${senderID}`
+		const msg = "==📨️ CALL ADMIN 📨️=="
+			+ `\n- User Name: ${senderName}`
+			+ `\n- User ID: ${senderID}`
 			+ (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
 
 		const formMessage = {
