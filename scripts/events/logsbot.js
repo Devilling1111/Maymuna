@@ -5,7 +5,7 @@ module.exports = {
 		name: "logsbot",
 		isBot: true,
 		version: "1.4",
-		author: "NTKhang",
+		author: "RB-BADOL-KHAN",
 		envConfig: {
 			allow: true
 		},
@@ -20,10 +20,10 @@ module.exports = {
 			footer: "\n- User ID: %1\n- Nhóm: %2\n- ID nhóm: %3\n- Thời gian: %4"
 		},
 		en: {
-			title: "====== Bot logs ======",
-			added: "\n✅\nEvent: bot has been added to a new group\n- Added by: %1",
-			kicked: "\n❌\nEvent: bot has been kicked\n- Kicked by: %1",
-			footer: "\n- User ID: %1\n- Group: %2\n- Group ID: %3\n- Time: %4"
+			title: "❤️==💛=【•বট•নটিস•】=💛==❤️",
+			added: "\n\n\n【•বট একটি নতুন গ্রুপে এড করা হয়েছে•】\n\n【এড করেছেন ইনি•】\n\n%1",
+			kicked: "\n\n【• বটকে একটি গ্রুপ থেকে কিক মারা হয়েছে 】\n\n【•কিক মেরেছেন ইনি•】\n\n%1",
+			footer: "\n\n【•যে কিক মেরেছে তার ইউজার আইডি•】\n\n%1\n\n【•এই গ্রুপ থেকে কিক মারা হয়েছে•】\n\n%2\n\n【•গ্রুপ ইউজার•】%3\n\n【•বাংলাদেশ টাইম•】\n\n【%4】"
 		}
 	},
 
@@ -54,7 +54,7 @@ module.exports = {
 				threadName = threadData.threadName;
 				msg += getLang("kicked", authorName);
 			}
-			const time = getTime("DD/MM/YYYY HH:mm:ss");
+			const time = getTime("DD/MM/YYYY hh:mm:ss");
 			msg += getLang("footer", author, threadName, threadID, time);
 
 			for (const adminID of config.adminBot)
