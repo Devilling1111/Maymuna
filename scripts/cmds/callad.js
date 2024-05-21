@@ -3,9 +3,9 @@ const mediaTypes = ["photo", 'png', "animated_image", "video", "audio"];
 
 module.exports = {
 	config: {
-		name: "callad",
+		name: "admin",
 		version: "1.7",
-		author: "NTKhang",
+		author: "RB-BADOL-KHAN",
 		countDown: 5,
 		role: 0,
 		description: {
@@ -34,7 +34,7 @@ module.exports = {
 			noAdmin: "Hiện tại bot chưa có admin nào"
 		},
 		en: {
-			missingMessage: "Please enter the message you want to send to admin",
+			missingMessage: "【•আপনি কি এডমিনের সাথে কন্টাক করছেন•】\n\n【•example•】👇\n\n.admin আসসালামু আলাইকুম❤️\n\n【•এইভাবে ট্রাই করুন ধন্যবাদ•】",
 			sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
 			sendByUser: "\n- Sent from user",
 			content: "\n\nContent:\n─────────────────\n%1\n─────────────────\nReply this message to send message to user",
@@ -56,9 +56,9 @@ module.exports = {
 		if (config.adminBot.length == 0)
 			return message.reply(getLang("noAdmin"));
 		const senderName = await usersData.getName(senderID);
-		const msg = "==📨️ CALL ADMIN 📨️=="
-			+ `\n- User Name: ${senderName}`
-			+ `\n- User ID: ${senderID}`
+		const msg = "==📨️ এডমিন মেনশন📨️=="
+			+ `\n- 𝐔𝐒𝐄𝐑•𝐍𝐀𝐌𝐄: ${senderName}`
+			+ `\n- 𝐔𝐒𝐄𝐑•𝐈𝐃: ${senderID}`
 			+ (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
 
 		const formMessage = {
