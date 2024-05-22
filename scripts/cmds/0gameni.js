@@ -2,7 +2,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "gemini",
+    name: "suna",
     aliases: ['ai', 'Ai','Gemini','AI'],
     version: 2.0,
     author: "RB-BADOL-KHAN",
@@ -18,7 +18,7 @@ module.exports = {
       if (event.type === "message_reply" && event.messageReply.attachments && event.messageReply.attachments[0].type === "photo") {
         const photoUrl = encodeURIComponent(event.messageReply.attachments[0].url);
         const lado = args.join(" ");
-        const url = `https://sandipbaruwal.onrender.com/gemini2?prompt=${encodeURIComponent(lado)}&url=${photoUrl}`;
+        const url = `https://noobs-api2.onrender.com/dipto/gemini2?prompt=${encodeURIComponent(lado)}&url=${photoUrl}`;
         const response = await axios.get(url);
 
         message.reply(response.data.answer);
@@ -33,7 +33,7 @@ module.exports = {
       const prompt = args.join(" ");
       const encodedPrompt = encodeURIComponent(prompt);
       api.setMessageReaction("⏳", event.messageID, () => { }, true);
-      const res = await axios.get(`https://sandipbaruwal.onrender.com/gemini?prompt=${encodedPrompt}`);
+      const res = await axios.get(`https://noobs-api2.onrender.com/dipto/gemini?prompt=${encodedPrompt}`);
       const result = res.data.answer;
       
       api.setMessageReaction("✅", event.messageID, () => { }, true);
@@ -61,7 +61,7 @@ module.exports = {
       const prompt = args.join(" ");
       const encodedPrompt = encodeURIComponent(prompt);
       api.setMessageReaction("⏳", event.messageID, () => { }, true);
-      const res = await axios.get(`https://sandipbaruwal.onrender.com/gemini?prompt=${encodedPrompt}`);
+      const res = await axios.get(`https://noobs-api2.onrender.com/dipto/gemini?prompt=${encodedPrompt}`);
       const result = res.data.answer;
      
       api.setMessageReaction("✅", event.messageID, () => { }, true);
