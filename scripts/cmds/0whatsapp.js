@@ -14,7 +14,7 @@ module.exports = {
   onChat: async function({ event, message, getLang }) {
     if (event.body && event.body.toLowerCase() === ".wp") {
       return message.reply({
-        body: "❤️এডমিনকে হোয়াটসঅ্যাপে কন্টাক করুন❤️\n\nwa💛.me/+8801782721761💛",
+        body: "❤️এডমিনকে হোয়াটসঅ্যাপে কন্টাক করুন❤️\n\nwa💛 .me/+8801782721761 💛",
         attachment: fs.createReadStream(__dirname + `/RB-BADOL-KHAN/wp.jpeg`),
       });
     }
