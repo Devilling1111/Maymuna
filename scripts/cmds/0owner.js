@@ -35,9 +35,9 @@ config: {
     }
 
     const videoResponse = await axios.get(bold, { responseType: 'arraybuffer' });
-    const jpegPath = path.join(tmpFolderPath, 'owner_video.jpeg');
+    const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
 
-    fs.writeFileSync(jpegPath, Buffer.from(videoResponse.data, 'binary'));
+    fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
     const response = `
 ❤️━❮●❯━━━━━❪𝐑•𝐁❫━━━━━❮●❯━❤️\n\n💛𝐎𝐖𝐍𝐄𝐑-𝐈𝐍𝐅𝐈𝐑𝐌𝐀𝐓𝐈𝐎𝐍:💛\n\n
@@ -49,7 +49,8 @@ config: {
 𝐌𝐄𝐒𝐒𝐄𝐍𝐆𝐄𝐑: ${ownerInfo.messengerLink}\n
 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏: ${ownerInfo.WhatsAppLink}\n
 𝐍𝐈𝐂𝐊: ${ownerInfo.nick}\n
-\n\n❤️━❮●❯━━━━━❪𝐑•𝐁❫━━━━━❮●❯━❤️`;
+\n\n❤️━❮●❯━━━━━❪𝐑•𝐁❫━━━━━❮●❯━❤️
+`;
 
 
     await api.sendMessage({
@@ -58,7 +59,7 @@ config: {
     }, event.threadID, event.messageID);
 
     if (event.body.toLowerCase().includes('ownerinfo')) {
-      api.setMessageReaction('📌', event.messageID, (err) => {}, true);
+      api.setMessageReaction('🚀', event.messageID, (err) => {}, true);
     }
   } catch (error) {
     console.error('Error in ownerinfo command:', error);
