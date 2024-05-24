@@ -2,10 +2,10 @@ const { getStreamsFromAttachment } = global.utils;
 
 module.exports = {
 	config: {
-		name: "notification",
+		name: "notis",
 		aliases: ["notify", "noti"],
 		version: "1.6",
-		author: "MR.SANNY",
+		author: "RB-BADOL-KHAN",
 		countDown: 5,
 		role: 2,
 		shortDescription: {
@@ -34,11 +34,11 @@ module.exports = {
 			errorSendingNotification: "Có lỗi xảy ra khi gửi đến %1 nhóm:\n%2"
 		},
 		en: {
-			missingMessage: "Please enter the message you want to send to all groups",
-			notification: "Notification from admin bot to all chat groups (do not reply to this message)",
-			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
-			sentNotification: "✅ Sent notification to %1 groups successfully",
-			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
+			missingMessage: "🟡আপনি যে বার্তাটি সকল গ্রুপে পাঠাতে চান তা লিখুন🟡",
+			notification: "⚪【•বট--আ্যডমিন-নোটিস-দিয়েছে•】⚪\n\n🔴【•বট ওয়ানার কে কন্টাক করুন•】🔴\n\n【 m.me/100000484977006 】",
+			sendingNotification: "🟢অ্যাডমিন বট থেকে %1 চ্যাট গ্রুপে মেসেস পাঠানো শুরু করুন🟢",
+			sentNotification: "🔵সফলভাবে %1 টি গ্রুপে মেসেস পাঠানো হয়েছে🔵",
+			errorSendingNotification: "🟣%1 গ্রুপে পাঠানোর সময় একটি ত্রুটি ঘটেছে:\n%2🟣"
 		}
 	},
 
@@ -47,7 +47,7 @@ module.exports = {
 		if (!args[0])
 			return message.reply(getLang("missingMessage"));
 		const formSend = {
-			body: `${getLang("notification")}\n────────────────\n${args.join(" ")}`,
+			body: `${getLang("notification")}\n\n🔴🟡⚪═══════❤️💛💙💜💚═══════⚪🟡🔴\n\n${args.join(" ")}`,
 			attachment: await getStreamsFromAttachment(
 				[
 					...event.attachments,
