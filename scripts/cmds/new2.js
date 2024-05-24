@@ -2,7 +2,7 @@ const { getStreamsFromAttachment, getTime } = global.utils;
 
 module.exports = {
 	config: {
-		name: "sendnoti",
+		name: "new2",
 		version: "1.5",
 		author: "NTKhang",
 		countDown: 5,
@@ -287,7 +287,7 @@ module.exports = {
 					return acc;
 				}, '');
 
-				message.reply(getLang('groupInfo', groupName, getGroup.groupID, getTime(getGroup.groupID, 'DD/MM/YYYY HH:mm:ss'), msg ? getLang('groupInfoHasGroup', msg) : getLang('groupIsEmpty', groupName)));
+				message.reply(getLang('groupInfo', groupName, getGroup.groupID, getTime(getGroup.groupID, 'DD/MM/YYYY hh:mm:ss'), msg ? getLang('groupInfoHasGroup', msg) : getLang('groupIsEmpty', groupName)));
 				break;
 			}
 			default: {
