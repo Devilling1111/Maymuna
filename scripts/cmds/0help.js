@@ -61,7 +61,7 @@ module.exports = {
                         pageNotFound: "Trang %1 không tồn tại"
                 },
                 en: {
-                        help: "(❁𝐑𝐁-𝐁𝐎𝐓-𝐂𝐌𝐃-𝐋𝐈𝐒𝐓❁)\n\n╔⏤⏤⏤╝❮❮𝐑𝐁•𝐁𝐎𝐓❯❯╚⏤⏤⏤╗\n\n      %6\n\n%1\n\n╚⏤⏤⏤╗❮❮𝐑𝐁•𝐁𝐎𝐓❯❯╔⏤⏤⏤╝\n\n🔐𝐓𝐎𝐓𝐀𝐋- %4 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒🔐\n\n━❮●❯━━━━━❪❤️💙💚❫━━━━━❮●❯━\n\n╭━─━──━─━≪✠≫━──━─━─━╮\n\n🔐𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑: 𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐊𝐇𝐀𝐍📌\n\n🔐𝐁𝐎𝐓 𝐀𝐃𝐌𝐍: 𝐑𝐀𝐉𝐀-𝐁𝐀𝐁𝐔📌\n\n🔐𝐎𝐖𝐍𝐄𝐑 & 𝐀𝐃𝐌𝐍 𝐂𝐎𝐍𝐓𝐄𝐊📌\n\nm.me/100000939642985\n\nm.me/100007070042228\n\n╰━─━──━─━≪✠≫━──━─━─━╯\n\n━❮●❯━━━━━❪❤️💙💚❫━━━━━❮●❯━\n\n \n",
+                        help: "(❁𝐑𝐁-𝐁𝐎𝐓-𝐂𝐌𝐃-𝐋𝐈𝐒𝐓❁)\n\n╔⏤⏤⏤╝❮❮𝐑𝐁•𝐁𝐎𝐓❯❯╚⏤⏤⏤╗\n\n      %6\n\n%1\n\n╚⏤⏤⏤╗❮❮𝐑𝐁•𝐁𝐎𝐓❯❯╔⏤⏤⏤╝\n\n🔐𝐓𝐎𝐓𝐀𝐋- %4 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒🔐\n\n━❮●❯━━━━━❪❤️💙💚❫━━━━━❮●❯━\n\n╭━─━──━─━≪✠≫━──━─━─━╮\n\n🔐𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑: 𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐊𝐇𝐀𝐍📌\n\n🔐𝐁𝐎𝐓 𝐀𝐃𝐌𝐍: 𝐑𝐀𝐉𝐀-𝐁𝐀𝐁𝐔📌\n\n🔐𝐎𝐖𝐍𝐄𝐑•𝐂𝐎𝐍𝐓𝐄𝐊🆚\n\nhttps://www.facebook.com/www.xxx.com.009\n\nm.me/100000484977006\n\n╰━─━──━─━≪✠≫━──━─━─━╯\n\n━❮●❯━━━━━❪❤️💙💚❫━━━━━❮●❯━\n\n \n",
                         help2: "%1├───────❯❯\n│ » Currently, the bot has %2 commands that can be used\n│ » Type %3help <command name> to view the details of how to use that command\n│ %4\n╰─────────────❯❯",
                         commandNotFound: "My Lord, Command \"%1\" does not exist, My Apologies 😓",
                         getInfoCommand: "╭── NAME ────❯❯\n│ %1\n├── INFO\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n├── Usage\n%9\n├── Notes\n│ The content inside <XXXXX> can be changed\n│ The content inside [a|b|c] is a or b or c\n╰──────❯❯",
@@ -128,7 +128,7 @@ module.exports = {
 
                                 const returnArray = allPage[page - 1] || [];
                                 const startNumber = (page - 1) * numberOfOnePage + 1;
-                                msg += (returnArray || []).reduce((text, item, index) => text += `│━━━━━━━━━━\n│ ${index + startNumber}${index + startNumber < 10 ? " " : ""}.${item.data}\n`, '').slice(0, -1);
+                                msg += (returnArray || []).reduce((text, item, index) => text += `│━━━━━━━━━━━━━━\n│ ${index + startNumber}${index + startNumber < 10 ? " " : ""}.${item.data}\n`, '').slice(0, -1);
                                 await message.reply(getLang("help", msg, page, totalPage, commands.size, prefix, doNotDelete));
                         }
                         else if (sortHelp == "category") {
