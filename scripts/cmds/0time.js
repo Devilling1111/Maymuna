@@ -5,7 +5,7 @@ module.exports = {
     name: "stats",
     aliases: ["stat","time"],
     version: "1.0",
-    author: "OtinXSandip",
+    author: "RB-BADOL-KHAN",
     role: 0,
     shortDescription: {
       en: "stats",
@@ -35,18 +35,18 @@ module.exports = {
       const options = { year: "numeric", month: "numeric", day: "numeric" };
       const date = currentDate.toLocaleDateString("en-US", options);
       const time = currentDate.toLocaleTimeString("en-US", {
-        timeZone: "Asia/Kathmandu",
+        timeZone: "Asia/Dhaka",
         hour12: true,
       });
 
       const timeStart = Date.now();
       await api.sendMessage({
-        body: "wait a sec boss🌝",
+        body: "🔴wait piz boss🔴",
       }, event.threadID);
 
       const ping = Date.now() - timeStart;
 
-      let pingStatus = "Not smooth throw your router, buddy";
+      let pingStatus = "𝐁𝐎𝐓-𝐎𝐖𝐍𝐄𝐑-𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐊𝐇𝐀𝐍";
       if (ping < 400) {
         pingStatus = "Smooth like your tiny cat";
       }
