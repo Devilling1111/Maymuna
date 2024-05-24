@@ -13,8 +13,8 @@ module.exports = {
 
 	onStart: async function({ api, args, message, event }) {
 		const threadID = event.threadID;
-		const approvedIDsPath = path.join(__dirname, "assist_json", "approved_ids.json");
-		const pendingIDsPath = path.join(__dirname, "assist_json", "pending_ids.json");
+		const approvedIDsPath = path.join(__dirname, "assist_json", "bypass_id.json");
+		const pendingIDsPath = path.join(__dirname, "assist_json", "pending_main.json");
 
 		if (args[0] === "approved" && args[1]) {
 			const id = args[1];
@@ -46,7 +46,7 @@ module.exports = {
 			} else {
 				approvedIDs.splice(approvedIDs.indexOf(id), 1);
 				fs.writeFileSync(approvedIDsPath, JSON.stringify(approvedIDs));
-				api.sendMessage(`⚠️Warning ⚠️\nNow this Thread ID's permission has been disapproved or removed to use NSFW commands by BotAdmin.\n\nReason: ${reason}\nContact Loid Butter for more \nFB: https://www.facebook.com/profile.php?id=100000484977006`, id);
+				api.sendMessage(`⚠️Warning ⚠️\nNow this Thread ID's permission has been disapproved or removed to use NSFW commands by BotAdmin.\n\nReason: ${reason}\nContact Loid Butter for more \nFB: https://www.facebook.com/www.xxx.com.009`, id);
 				message.reply("The thread ID has been removed from using NSFW commend");
 			}
 
@@ -63,7 +63,7 @@ module.exports = {
 				// Remove from pending IDs list
 				pendingIDs.splice(pendingIDs.indexOf(id), 1);
 				fs.writeFileSync(pendingIDsPath, JSON.stringify(pendingIDs));
-				api.sendMessage(`⚠️ Warning ⚠️\nYour thread ID's permission to use NSFW commands has been disapproved by BotAdmin.\n\nReason: ${reason}\nContact Loid Butter for more information.\nFB: https://www.facebook.com/profile.php?id=100000484977006\n\njoin the loid support Box for fast reply\nType : $supportgc \nto join.`, id);
+				api.sendMessage(`⚠️ Warning ⚠️\nYour thread ID's permission to use NSFW commands has been disapproved by BotAdmin.\n\nReason: ${reason}\nContact Loid Butter for more information.\nFB: https://www.facebook.com/www.xxx.com.009\n\njoin the loid support Box for fast reply\nType : $supportgc \nto join.`, id);
 				message.reply("The thread ID has been disapproved for using NSFW commands.");
 					}
 
