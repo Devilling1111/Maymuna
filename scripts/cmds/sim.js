@@ -4,9 +4,9 @@ module.exports = {
  config: {
  name: 'sim',
  version: '1.2',
- author: 'NIB | JARiF',
+ author: 'RB-BADOL-KHAN',
  countDown: 5,
- role: 0,
+ role: 2,
  shortDescription: 'Sakura Ai',
  longDescription: {
  vi: 'Chat với sakura ♡',
