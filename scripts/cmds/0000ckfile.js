@@ -31,10 +31,10 @@ case "goodmorning":
             attachment: fs.createReadStream("scripts/cmds/RB-BADOL-KHAN/goodmorning.gif"),
           });
           await api.setMessageReaction("🌇", event.messageID, event.threadID, api);
-   case "welcome 🌸":
+   case "@بادال محمد":
           message.reply({
-            body: "∘₊✧─────────────────✧₊∘\n    Welcome! Enjoy Your Stay! 🌸",
-            attachment: fs.createReadStream("scripts/cmds/RB-BADOL-KHAN/welcome.gif"),
+            body: "∘₊✧─────────────────✧₊∘\nn😦বস এখন বিজি আছে🙂",
+            attachment: fs.createReadStream("scripts/cmds/RB-BADOL-KHAN/owner.png"),
           });
           await api.setMessageReaction("🌸", event.messageID, event.threadID, api);
 case "rules":
