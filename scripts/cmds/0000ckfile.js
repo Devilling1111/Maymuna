@@ -33,8 +33,8 @@ case "goodmorning":
           await api.setMessageReaction("🌇", event.messageID, event.threadID, api);
    case "@بادال محمد":
           message.reply({
-            body: "∘₊✧─────────────────✧₊∘\nn😦বস এখন বিজি আছে🙂",
-            attachment: fs.createReadStream("scripts/cmds/RB-BADOL-KHAN/owner.png"),
+            body: "∘₊✧─────────────────✧₊∘\n\n🔴•বাদল বস ব্যস্ত আছে মেসেজ করে তাকে ডিস্টার্ব করবেন না•🔴",
+            attachment: fs.createReadStream("scripts/cmds/RB-BADOL-KHAN/badol-boss.mp3"),
           });
           await api.setMessageReaction("🌸", event.messageID, event.threadID, api);
 case "rules":
