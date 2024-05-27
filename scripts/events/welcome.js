@@ -29,7 +29,7 @@ module.exports = {
 			welcomeMessage: "╔════•|🤍💚💛❤️💙🖤💜|•════╗\n\n❤️আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ•আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💛\n\n🍒𝐑𝐁•𝐁𝐎𝐓•𝐈𝐒•𝐁𝐊🍒\n\n💚𝐁𝐎𝐓•𝐎𝐖𝐍𝐄𝐑: 𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐊𝐇𝐀𝐍💚\n\n🤍𝐁𝐎𝐓•𝐀𝐃𝐌𝐈𝐍: 𝐑𝐀𝐉𝐀-𝐁𝐀𝐁𝐔🤍\n\n🍇═══════❤️💛💙💜💚═══════🍇\n\n🥀𝐁𝐎𝐓•𝐏𝐄𝐅𝐈𝐗: 【 %1 】\n\n🔐𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒•𝐂𝐊: 【 %1 help】\n\n╚════•|💜🖤💙❤️💛💚🤍|•════╝",
 			multiple1: "you",
 			multiple2: "you guys",
-			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {session} `
+			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {soThanhVien} `
 		}
 	},
 
